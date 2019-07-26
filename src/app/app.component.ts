@@ -15,7 +15,7 @@ export class AppComponent {
   }
 
   getTodoItems() {
-    return this.model.items.filter(item => !item.done);
+    return this.model.items; //.filter(item => !item.done);
   }
 
   addItem(newItem) {
