@@ -2,6 +2,7 @@
 
 const CleanWebpackPlugin   = require('clean-webpack-plugin');
 const HtmlWebpackPlugin    = require('html-webpack-plugin');
+const vtkRules             = require('vtk.js/Utilities/config/dependency.js').webpack.core.rules;
 
 const helpers              = require('./helpers');
 const isDev                = process.env.NODE_ENV !== 'production';
@@ -39,7 +40,7 @@ module.exports = {
                 }
               }
             }
-        ]
+        ].concat(vtkRules),
     },
 
     plugins: [

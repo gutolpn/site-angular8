@@ -1,3 +1,0 @@
-fuction teste(){
-  alert('ola');
-}
