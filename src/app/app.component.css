@@ -1,3 +1,7 @@
-h3 {
-  color: darkblue;
+@media (max-width: 600px)
+{
+  .col-4
+   {
+
+   }
 }

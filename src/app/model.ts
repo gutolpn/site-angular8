@@ -1,6 +1,6 @@
 export class Model {
-  user: string;
-  items: TodoItem[];
+  user;
+  items;
 
   constructor() {
     this.user = "Adam";
@@ -12,10 +12,10 @@ export class Model {
 }
 
 export class TodoItem {
-  action: string;
-  done: boolean;
+  action;
+  done;
 
-  constructor(action: string, done: boolean) {
+  constructor(action, done) {
     this.action = action;
     this.done = done;
   }
