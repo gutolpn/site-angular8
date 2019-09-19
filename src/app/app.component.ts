@@ -1,6 +1,13 @@
 import { Component } from '@angular/core';
 import { Model, TodoItem } from './model';
-//import { get } from 'scriptjs';
+
+//import('./chart.js').then( m => console.log('teste'));
+
+//import vtkFullScreenRenderWindow from 'vtk.js/Sources/Rendering/Misc/FullScreenRenderWindow';
+/*import {vtkActor} from 'vtk.js/Sources/Rendering/Core/Actor';
+import {vtkMapper} from 'vtk.js/Sources/Rendering/Core/Mapper';
+import {vtkConeSource} from 'vtk.js/Sources/Filters/Sources/ConeSource';
+*/
 
 @Component({
   selector: 'app-root',
@@ -11,6 +18,14 @@ import { Model, TodoItem } from './model';
 export class AppComponent {
   title: string = 'todo';
   model: Model = new Model();
+
+
+ //fullScreenRenderer = vtkFullScreenRenderWindow.newInstance();
+  /*fullScreenRenderer = new vtkFullScreenRenderWindow();
+  actor = new vtkActor();
+  mapper = new vtkMapper();
+  cone = new vtkConeSource();
+  */
 
   getName() {
     return this.model.user;
@@ -24,13 +39,6 @@ export class AppComponent {
     if (newItem != "") {
       this.model.items.push(new TodoItem(newItem, false));
     }
-  }
-
-
-  ngOnInit() {
-    /*get('vtk.js/Sources/Rendering/Misc/FullScreenRenderWindow', function() {
-    });
-    */
   }
 
 }

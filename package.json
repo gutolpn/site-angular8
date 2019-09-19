@@ -19,10 +19,8 @@
       "@angular/platform-browser": "~8.1.2",
       "@angular/platform-browser-dynamic": "~8.1.2",
       "@angular/router": "~8.1.2",
-      "@types/scriptjs": "0.0.2",
       "bootstrap": "^4.1.1",
       "rxjs": "~6.4.0",
-      "scriptjs": "^2.5.9",
       "tslib": "^1.9.0",
       "vtk.js": "^11.1.1",
       "zone.js": "~0.9.1"
