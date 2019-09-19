@@ -1,0 +1,3 @@
+fuction teste(){
+  alert('ola');
+}
